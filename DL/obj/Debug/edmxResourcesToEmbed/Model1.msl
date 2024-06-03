@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="administracionModelStoreContainer" CdmEntityContainer="administracionEntities">
+    <FunctionImportMapping FunctionImportName="ConsultaDispositivos" FunctionName="administracionModel.Store.ConsultaDispositivos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="administracionModel.ConsultaDispositivos_Result">
+          <ScalarProperty Name="Token" ColumnName="Token" />
+          <ScalarProperty Name="IdDispositivo" ColumnName="IdDispositivo" />
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="SistemaOperativo" ColumnName="SistemaOperativo" />
+          <ScalarProperty Name="VersionSO" ColumnName="VersionSO" />
+          <ScalarProperty Name="Manufactura" ColumnName="Manufactura" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

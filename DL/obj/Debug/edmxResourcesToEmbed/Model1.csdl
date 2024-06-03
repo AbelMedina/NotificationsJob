@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="administracionModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="administracionEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="ConsultaDispositivos" ReturnType="Collection(administracionModel.ConsultaDispositivos_Result)" />
+  </EntityContainer>
+  <ComplexType Name="ConsultaDispositivos_Result">
+    <Property Type="String" Name="Token" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="IdDispositivo" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="IdEmpleado" Nullable="true" />
+    <Property Type="String" Name="SistemaOperativo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="VersionSO" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Manufactura" Nullable="true" MaxLength="100" />
+  </ComplexType>
+</Schema>
